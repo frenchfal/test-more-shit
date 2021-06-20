@@ -2,7 +2,13 @@
 
 body {
     background-image: "data:image/png;base64,aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1vcDNMNmRKdmdLSQ==";
-  }
-  html {
+}
+html {
     cursor: url("../img/mec483.cur") 6 6, auto;
-  }
+}
+
+#map {
+    display: block;
+    width: 422px;
+    margin: auto;
+}
