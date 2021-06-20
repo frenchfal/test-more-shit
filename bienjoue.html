@@ -25,14 +25,11 @@
 <body>
   <div  class="centerPseudo">
     <div id="secondObject" class="centerPseudo">
-      <iframe width="939" height="528" title="YouTube video player" autoplay frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="youtube"></iframe>
+      <iframe width="939" height="528" src="https://www.youtube.com/embed/op3L6dJvgKI?autoplay=1" title="YouTube video player" autoplay frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="youtube"></iframe>
+      <p>
+        <a href="island.html">En avant toute !</a>
+      </p>
     </div>
   </div>
-  <script>
-    var url_string = "https://www.youtube.com/embed/";
-    var url = new URL(window.location.href);
-    var video = url.searchParams.get("video");
-    document.getElementById('youtube').src = url_string + video + "?autoplay=1"
-  </script>
 </body>
 </html>
