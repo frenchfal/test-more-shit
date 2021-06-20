@@ -6,10 +6,10 @@ document.getElementById('map').onclick = function clickEvent(e) {
     console.log("Left? : " + x + " ; Top? : " + y + ".");
 
     if (x > 330 && x < 340 && y > 165 && y < 170) {
-        window.location.href = "https://www.youtube.com/watch?v=op3L6dJvgKI"
+        window.location.href = "embed.html?video=op3L6dJvgKI"
     }
 
     if (x > 150 && x < 190 && y > 158 && y < 186) {
-        window.location.href = "https://www.youtube.com/watch?v=hSpQkbcw0TE"
+        window.location.href = "embed.html?video=hSpQkbcw0TE&autoplay=1"
     }
 }
