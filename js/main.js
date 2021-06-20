@@ -8,4 +8,8 @@ document.getElementById('map').onclick = function clickEvent(e) {
     if (x > 330 && x < 340 && y > 165 && y < 170) {
         window.location.href = "https://www.youtube.com/watch?v=op3L6dJvgKI"
     }
+
+    if (x > 150 && x < 190 && y > 158 && y < 186) {
+        window.location.href = "https://www.youtube.com/watch?v=hSpQkbcw0TE"
+    }
 }
