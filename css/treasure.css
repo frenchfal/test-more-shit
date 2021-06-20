@@ -1,0 +1,12 @@
+
+body {
+    background: url('../img/treasure.jpeg') no-repeat center center fixed;
+}
+
+span {
+    font-size: 150px;
+    font-weight: normal;
+    color: white;
+    text-shadow: 0 0 3px black;
+
+}
