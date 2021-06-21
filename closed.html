@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/temple.css">
+  <link rel="stylesheet" href="css/closed.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -27,6 +27,8 @@
 
   <form  class="centerPseudo">
     <div id="secondObject" class="centerPseudo">
+      <p class="prompt">Coffre fermé, le cadenas est une date (JJ/MM/AAAA) </p>
+      <input type="text" name="answer" id="answer"/>
     </div>
   </form>
 
@@ -36,15 +38,12 @@
   <script src="js/vendor/konami.js"></script>
 
   <script>
-    var easter_egg = new Konami(function() { 
-      document.getElementById('secondObject').innerHTML = '<p class="prompt">Question: Quel est le point cardinal le plus pauvre ?<br/>Réponse: Le Nord <br/>Pourquoi ? Car ... </p><input type="text" name="answer" id="answer"/>'
-    });
 
     document.getElementsByTagName('form')[0].addEventListener("submit", event => {
       event.preventDefault();
 
-      if (document.getElementById('answer').value.toLowerCase() === "le nord mendie") {
-        window.location.href = "closed.html"
+      if (document.getElementById('answer').value.toLowerCase() === "18/06/1940") {
+        window.location.href = "treasure.html"
       }
     });
 
