@@ -25,7 +25,7 @@ const redirection = {
 
 if (document.getElementById('temple')) {
   var easter_egg = new Konami(function() { 
-    document.getElementById('secondObject').innerHTML = '<p class="prompt">Question: Quel est le point cardinal le plus pauvre ?<br/>Réponse: Le Nord <br/>Pourquoi ? Car ... </p><input type="text" name="answer" id="answer"/>'
+    document.getElementById('secondObject').innerHTML = '<p class="prompt">Question: Quel est le point cardinal le plus pauvre ?<br/>Réponse: Le Nord <br/>Pourquoi ? Car ... </p><br/><br/><input type="text" name="answer" id="answer"/>'
   });
 }
 const validateAnswer = page => {
