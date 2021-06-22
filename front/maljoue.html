@@ -18,36 +18,33 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/closed.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
-  <form  class="centerPseudo">
+  <div  class="centerPseudo">
     <div id="secondObject" class="centerPseudo">
-      <p class="prompt">Coffre fermé, le cadenas est une date (JJ/MM/AAAA) </p>
-      <input type="text" name="answer" id="answer"/>
+      <iframe width="939" height="528" title="YouTube video player" autoplay frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="youtube"></iframe>
+      <p>
+        <a href="#" id="go-back">Retour !</a>
+      </p>
     </div>
-  </form>
-
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/vendor/konami.js"></script>
+  </div>
 
   <script>
+    var videos = [
+      "hSpQkbcw0TE",
+      "xMiBou66TuY",
+      "WJq4jWSQNd8",
+      "ZiE3aVQGf8o",
+      "FP6F4lCRl7M",
+    ]
+    
+    var videoId = videos[Math.round(Math.random() * (videos.length - 1))];
+    document.getElementById('youtube').src = `https://www.youtube.com/embed/${videoId}?autoplay=1`
 
-    document.getElementsByTagName('form')[0].addEventListener("submit", event => {
-      event.preventDefault();
-
-      if (document.getElementById('answer').value.toLowerCase() === "18/06/1940") {
-        window.location.href = "treasure.html"
-      }
-    });
-
+    document.getElementById('go-back').onclick = () => history.back();
   </script>
 </body>
-
 </html>
