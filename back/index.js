@@ -1,18 +1,24 @@
 var express = require('express');
-var app = express();
+var cors = require('cors');
+
+var app = express()
+
+app.use(cors())
 app.use(express.json());
 
 const answers = {
     island: '🏖️',
     jungle: 'debarquement',
     temple: 'le nord mendie',
-    chest: '06/06/1944',
+    closed: '06/06/1944',
 }
 
 
 // POST method route
 app.post('/', function (req, res) {
     const { page, answer } = req.body;
+
+    console.log(page, answer)
 
     if (!answers.hasOwnProperty(page)) {
         res.sendStatus(404);

@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body id="island">
 
   <form  class="centerPseudo">
     <div id="secondObject" class="centerPseudo">
@@ -34,17 +34,7 @@
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-
-  <script>
-    document.getElementsByTagName('form')[0].addEventListener("submit", event => {
-      event.preventDefault();
-
-      if (document.getElementById('answer').value === "🏖️") {
-        window.location.href = "jungle.html"
-      }
-    });
-
-  </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

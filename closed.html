@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body id="closed">
 
   <form  class="centerPseudo">
     <div id="secondObject" class="centerPseudo">
@@ -36,18 +36,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/vendor/konami.js"></script>
-
-  <script>
-
-    document.getElementsByTagName('form')[0].addEventListener("submit", event => {
-      event.preventDefault();
-
-      if (document.getElementById('answer').value.toLowerCase() === "06/06/1944") {
-        window.location.href = "treasure.html"
-      }
-    });
-
-  </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
