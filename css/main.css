@@ -294,6 +294,10 @@ html, body {
   height: 100%;
 }
 
+.video {
+  margin-top: 140px !important;
+}
+
 input {
   width: 30%;
   height: 50px;
