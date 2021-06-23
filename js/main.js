@@ -36,7 +36,7 @@ const validateAnswer = page => {
     document.getElementById(page).getElementsByTagName('form')[0].addEventListener("submit", async event => {
         event.preventDefault();
 
-        const data = await fetch("https://894bc429bc7f.ngrok.io", {
+        const data = await fetch("https://5c6bfa6a7ad5.ngrok.io", {
             method: "POST",
             headers: {
                 'Content-type': 'application/json'
